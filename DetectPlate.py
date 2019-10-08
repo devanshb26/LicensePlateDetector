@@ -1,7 +1,7 @@
 from skimage.io import imread
 from skimage.filters import threshold_otsu
 import matplotlib.pyplot as plt
-
+%matplotlib inline
 filename = './video12.mp4'
 
 import cv2
