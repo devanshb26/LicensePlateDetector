@@ -2,7 +2,9 @@ from skimage.io import imread
 from skimage.filters import threshold_otsu
 import matplotlib.pyplot as plt
 from IPython import get_ipython
-get_ipython().run_line_magic('matplotlib', 'inline')
+ipy = get_ipython()
+if ipy is not None:
+    ipy.run_line_magic('matplotlib', 'inline')
 filename = './video12.mp4'
 
 import cv2
